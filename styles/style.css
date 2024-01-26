@@ -11,11 +11,12 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+ margin: auto; 
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  
 }
 
 h1,
@@ -38,7 +39,7 @@ ol {
 }
 
 .content {
-  margin: 133px 30px 0 30px;
+  margin: 133px 30px ;
   display: flex;
   align-items: end;
   width: 1140px;
@@ -125,6 +126,7 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   text-decoration-color: #FFF;
 }
@@ -281,9 +283,12 @@ height: 34px;
     cursor: pointer;
   }
   
-  .content__card-link_current:active{
+  .content__card-link_current ,
+   .content__card-link:active{
     background-color: #545050;
   }
+
+  
   
   .content__card-link:focus-visible{
     outline: 1px solid #FFF;
